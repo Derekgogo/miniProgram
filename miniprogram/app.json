@@ -1,14 +1,38 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/category/category"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#FF6978",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#FF6978",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./assets/tabbar/home.png",
+        "selectedIconPath": "./assets/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "./assets/tabbar/category.png",
+        "selectedIconPath": "./assets/tabbar/category_active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "./assets/tabbar/about.png",
+        "selectedIconPath": "./assets/tabbar/about_active.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

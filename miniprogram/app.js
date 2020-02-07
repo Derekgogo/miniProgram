@@ -1,7 +1,15 @@
 //app.js
 App({
+  //生命周期函数,后台存活2个小时
+  //小程序初始化完成时,会执行的生命周期函数
   onLaunch: function () {
-    
+    //异步调用
+    // wx.getUserInfo({
+    //   success: (res) => {
+    //     console.log(res);
+    //   }
+    // })
+   
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
