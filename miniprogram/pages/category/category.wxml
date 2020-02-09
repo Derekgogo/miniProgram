@@ -1,3 +1,6 @@
 <!--pages/category/category.wxml-->
 <text>pages/category/category.wxml</text>
 <button open-type="getUserInfo" bindgetuserinfo="getInfo">获取</button>
+<open-data type="userNickName" open-gid="xxxxxx"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userGender" lang="zh_CN"></open-data>

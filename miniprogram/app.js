@@ -1,4 +1,5 @@
 //app.js
+//注册小程序示例
 App({
   //生命周期函数,后台存活2个小时
   //小程序初始化完成时,会执行的生命周期函数
@@ -24,5 +25,8 @@ App({
     }
 
     this.globalData = {}
+  },
+  onShow:options=>{
+    console.log(options);
   }
 })

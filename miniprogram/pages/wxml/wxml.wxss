@@ -1,0 +1,7 @@
+.box {
+  font-size: 100rpx;
+}
+
+.active {
+  color: red;
+}
