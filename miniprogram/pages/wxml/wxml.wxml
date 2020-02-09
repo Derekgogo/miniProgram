@@ -54,3 +54,11 @@ include引入:
 
 
 <template is="contentItem" data="{{btnText:'按钮',content:'哈哈'}}" />
+
+<!-- wxs(weixin Script)是小程序的一套脚本语言 -->
+<!-- wxml中是不能直接调用page/Component中定义的函数 -->
+<!-- 但是某些情况,我们可以希望使用函数来处理wxml中的数据(类似于vue中的过滤器),这个时候就是用wxs了 -->
+<!-- 错误写法 -->
+<!-- <view>{{24.22333333.toFixed(2)}}</view> -->
+<!-- 不可以调用某个函数 -->
+<!-- <view>{{numberToFixed(32.222222)}}</view> -->

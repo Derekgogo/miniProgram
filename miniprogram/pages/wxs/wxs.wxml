@@ -1,0 +1,34 @@
+<!-- wxs(weixin Script)是小程序的一套脚本语言 -->
+<!-- wxml中是不能直接调用page/Component中定义的函数 -->
+<!-- 但是某些情况,我们可以希望使用函数来处理wxml中的数据(类似于vue中的过滤器),这个时候就是用wxs了 -->
+<!-- 错误写法 -->
+<!-- <view>{{24.22333333.toFixed(2)}}</view> -->
+<!-- 不可以调用某个函数 -->
+<!-- <view>{{numberToFixed(32.222222)}}</view> -->
+
+
+<!-- <wxs module="info">
+  //js代码 只支持es5语法
+  var msg = "hello world";
+  var name = "名字";
+  var data = function(num1,num2) {
+    return num1 + num2;
+  }
+  //commonjs的模块化导出的写法
+  module.exports = {
+    msg:msg,
+    name:name,
+    data:data
+  }
+</wxs> -->
+<!-- 2.2定义在单独的wxs文件中,再使用<wxs>标签进行导入 -->
+<!-- 不能使用绝对路径，必须使用相对路径 -->
+<wxs src="../../wxs/info.wxs" module="info"/>
+
+<view>{{info.msg}}</view>
+<view>{{info.data(1,2)}}</view>
+
+<!-- 3.wxs的应用 -->
+<wxs src="../../wxs/format.wxs" module="format"/>
+<view>{{format.priceFormat(11111)}}</view>
+<view>{{format.dateFormat(time,'yyyy-MM-dd')}}</view>

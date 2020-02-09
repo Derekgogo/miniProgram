@@ -1,0 +1,12 @@
+//js代码 只支持es5语法
+var msg = "hello world";
+var name = "名字";
+var data = function(num1, num2) {
+  return num1 + num2;
+}
+//commonjs的模块化导出的写法
+module.exports = {
+  msg: msg,
+  name: name,
+  data: data
+}

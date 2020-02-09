@@ -31,5 +31,8 @@ Page({
     this.setData({
       isActive: !this.data.isActive
     })
+  },
+  numberToFixed(val){
+    return val.toFixed(2);
   }
 })
