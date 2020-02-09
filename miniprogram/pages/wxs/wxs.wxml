@@ -32,3 +32,5 @@
 <wxs src="../../wxs/format.wxs" module="format"/>
 <view>{{format.priceFormat(11111)}}</view>
 <view>{{format.dateFormat(time,'yyyy-MM-dd')}}</view>
+
+

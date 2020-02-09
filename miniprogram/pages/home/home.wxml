@@ -11,3 +11,18 @@
 <view>当前计数:{{counter}}</view>
 <button size="min" bindtap="handleBtnClick">+</button>
 <button size="min" bindtap="handleSubtraction">-</button>
+
+
+<!-- 1.事件处理的回顾 -->
+<button bindtap="handleBtnClick" size="mini">按钮</button>
+<button bind:tap="handleBtnClick" size="mini">按钮</button>
+<button catche:tap="handleBtnClick" size="mini">按钮</button>
+
+<!-- 2.常见的一些事件 -->
+<view class="box"
+      bind:touchstart="handleTouchStart"
+      bind:touchmove="handlTouchMove"
+      bind:touchend="handleTouchEnd"
+      bind:tag="handleTap"
+      bind:longpress="handleLongpress"
+      ></view>

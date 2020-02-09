@@ -40,12 +40,12 @@ Page({
     })
   },
   onLoad() {
-    wx.request({
-      url: '',
-      success: () => {
+    // wx.request({
+    //   url: '',
+    //   success: () => {
 
-      }
-    })
+    //   }
+    // })
   },
 
   //4.其他事件
@@ -59,5 +59,21 @@ Page({
   },
   onPullDownRefresh(){
     console.log('下拉刷新数据');
+  },
+
+  handleTouchStart(){
+    console.log('handleTouchStart');
+  },
+  handlTouchMove(){
+    console.log('handlTouchMove');
+  },
+  handleTouchEnd(){
+    console.log('handleTouchEnd');
+  },
+  handleTap(){
+    console.log('handleTap');
+  },
+  handleLongpress(){
+    console.log('handleLongpress');
   }
 })
