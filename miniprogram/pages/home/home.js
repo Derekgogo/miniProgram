@@ -25,7 +25,7 @@ Page({
     ],
     counter: 0,
     titles: ['衣服', '裤子', '鞋子'],
-    num:0
+    num: 0
   },
   handleBtnClick() {
     //1错误的做法:界面是不会刷新的
@@ -121,11 +121,29 @@ Page({
     console.log('handleBindView3');
   },
 
-    //组件事件
-  handleIncrement(event){
+  //组件事件
+  handleIncrement(event) {
     console.log(event);
     this.setData({
-      num:this.data.num + 1
+      num: this.data.num + 1
     })
+  },
+
+  handleTabControlClick(event) {
+    let id = event.detail.id;
+    let title = event.detail.title;
+    console.log(id + '  ' + title);
+  },
+
+  handleIncrementCpn() {
+    //最终目的:修改my-sel中的counter
+    //1.获取组件对象
+    const my_sel = this.selectComponent('#sel-id');
+    //2.通过setData修改组件中的数据（不合理）
+    // my_sel.setData({
+    //   counter: my_sel.data.counter + 1
+    // })
+    // 3.通过方法对数据进行修改
+    my_sel.incrementCounter(my_sel);
   }
 })
