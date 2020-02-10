@@ -37,3 +37,12 @@
 <!-- 事件时是会冒泡 -->
 <!-- currentTarget是触发事件的view
 target是产生事件的view -->
+
+<!-- 4.事件的传递参数 -->
+<view class="container">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+    <view class="item"
+      bindtap="handleItemClick"
+      data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+  </block>
+</view>

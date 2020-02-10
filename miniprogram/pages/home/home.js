@@ -24,7 +24,7 @@ Page({
       }
     ],
     counter: 0,
-    title: ['衣服', '裤子', '鞋子']
+    titles: ['衣服', '裤子', '鞋子']
   },
   handleBtnClick() {
     //1错误的做法:界面是不会刷新的
@@ -90,5 +90,13 @@ Page({
   },
   handleOuter(event){
     console.log(event);
+  },
+
+  handleItemClick(event){
+    console.log(event);
+    const dataset = event.currentTarget.dataset;
+    const id = dataset.index;
+    const title = dataset.item;
+    console.log(id+'  '+title);
   }
 })

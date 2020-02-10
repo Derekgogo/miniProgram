@@ -13,3 +13,12 @@
   height:150rpx;
   background:blue;
 }
+
+.container{
+  flex-direction:row;
+  display: flex;
+}
+.item{
+  flex:1;
+  text-align: center;
+}
