@@ -53,7 +53,7 @@ target是产生事件的view -->
 <view class="view1" capture-bind:tap="handleCatpureView1" bindtap="handleBindView1">
   <view class="view2" capture-bind:tap="handleCatpureView2" bindtap="handleBindView2">
     <view class="view3" capture-catch:tap="handleCatpureView3" bindtap="handleBindView3">
-    
+
     </view>
   </view>
 </view>
@@ -72,8 +72,28 @@ target是产生事件的view -->
 <my-event bind:increment="handleIncrement"></my-event>
 
 <!-- 4.tab-control的练习 -->
-<w-tab-control titles="{{['流行','新款','经典']}}" bind:itemClick="handleTabControlClick"/>
+<w-tab-control titles="{{['流行','新款','经典']}}" bind:itemClick="handleTabControlClick" />
 
 <!-- 5.直接选中组件修改数据/调用方法 -->
 <button size="mini" bind:tap="handleIncrementCpn">修改组件内部的数据</button>
-<my-select class="sel-class" id="sel-id"/>
+<my-select class="sel-class" id="sel-id" />
+
+<!-- 6.插槽的使用 -->
+<!-- 6.1单个插槽的使用 -->
+<my-slot>
+  <button>我是插槽按钮</button>
+</my-slot>
+<my-slot>
+  <text>我是插槽中的内容</text>
+</my-slot>
+-----------------
+<!-- 6.2多个插槽的使用 -->
+<!-- 注意事项
+1.给每一个插槽起一个名字: name属性
+2.必须在Component对象中添加一个选项:options{multipleSlots: true}
+ -->
+<my-slot-duo>
+  <text slot="slot2">1111</text>
+  <text slot="slot3">222</text>
+  <text slot="slot1">333</text>
+</my-slot-duo>
