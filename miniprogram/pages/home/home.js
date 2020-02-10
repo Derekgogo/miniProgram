@@ -23,7 +23,8 @@ Page({
         age: 30
       }
     ],
-    counter: 0
+    counter: 0,
+    title: ['衣服', '裤子', '鞋子']
   },
   handleBtnClick() {
     //1错误的做法:界面是不会刷新的
@@ -54,26 +55,40 @@ Page({
     console.log(obj);
   },
   //页面滚动到底部
-  onReachBottom(){
+  onReachBottom() {
     console.log('页面滚动到底部');
   },
-  onPullDownRefresh(){
+  onPullDownRefresh() {
     console.log('下拉刷新数据');
   },
 
-  handleTouchStart(){
+  handleTouchStart() {
     console.log('handleTouchStart');
   },
-  handlTouchMove(){
+  handlTouchMove() {
     console.log('handlTouchMove');
   },
-  handleTouchEnd(){
+  handleTouchEnd() {
     console.log('handleTouchEnd');
   },
-  handleTap(){
+  handleTap() {
     console.log('handleTap');
   },
-  handleLongpress(){
+  handleLongpress() {
     console.log('handleLongpress');
+  },
+
+  handleEventClick(event) {
+    console.log(event);
+  },
+  handleEventEnd(event) {
+    console.log(event);
+  },
+
+  handleInner(event) {
+    console.log(event);
+  },
+  handleOuter(event){
+    console.log(event);
   }
 })

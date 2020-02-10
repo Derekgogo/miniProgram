@@ -3,3 +3,13 @@
   height:300rpx;
   border:1px solid red;
 }
+.outter{
+  width: 300rpx;
+  height:300rpx;
+  background:red;
+}
+.inner{
+  width:150rpx;
+  height:150rpx;
+  background:blue;
+}

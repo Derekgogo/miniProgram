@@ -3,9 +3,11 @@
 <view>我的年龄 {{age}}</view>
 
 <!-- 2.列表展示 wx:for-->
-<view wx:for="{{student}}" wx:key="">
-{{item.name}}--{{item.age}}
-</view>
+<block wx:for="{{student}}" wx:key="">
+  <view>
+    {{item.name}}--{{item.age}}
+  </view>
+</block>
 
 <!-- 事件监听 -->
 <view>当前计数:{{counter}}</view>
@@ -19,10 +21,19 @@
 <button catche:tap="handleBtnClick" size="mini">按钮</button>
 
 <!-- 2.常见的一些事件 -->
-<view class="box"
-      bind:touchstart="handleTouchStart"
-      bind:touchmove="handlTouchMove"
-      bind:touchend="handleTouchEnd"
-      bind:tag="handleTap"
-      bind:longpress="handleLongpress"
-      ></view>
+<view class="box" bind:touchstart="handleTouchStart" bind:touchmove="handlTouchMove" bind:touchend="handleTouchEnd" bind:tag="handleTap" bind:longpress="handleLongpress"></view>
+
+<!-- 3.事件对象的分析 -->
+<button id="btn" size="mini" bindtap="handleEventClick" bindtouchend="handleEventEnd">事件监听</button>
+<!-- touches是用来记录当前有几个手指在小程序中触摸的以及对应的触摸点的信息 -->
+<!-- touches上所有触摸点的列表 -->
+<!-- changedtouches是用来记录手机触摸的 -->
+<!-- changeTouches改变的触摸点的集合 -->
+
+<view class="outer" id="outer" bindtap="handleOuter">
+  外层
+  <view class="inner" id="inner" bindtap="handleInner">内层</view>
+</view>
+<!-- 事件时是会冒泡 -->
+<!-- currentTarget是触发事件的view
+target是产生事件的view -->
