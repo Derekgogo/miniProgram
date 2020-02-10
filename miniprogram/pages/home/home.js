@@ -88,15 +88,35 @@ Page({
   handleInner(event) {
     console.log(event);
   },
-  handleOuter(event){
+  handleOuter(event) {
     console.log(event);
   },
 
-  handleItemClick(event){
+  handleItemClick(event) {
     console.log(event);
     const dataset = event.currentTarget.dataset;
     const id = dataset.index;
     const title = dataset.item;
-    console.log(id+'  '+title);
-  }
+    console.log(id + '  ' + title);
+  },
+
+  // -----事件冒泡和事件捕获
+  handleCatpureView1() {
+    console.log('handleCatpureView1');
+  },
+  handleBindView1() {
+    console.log('handleBindView1');
+  },
+  handleCatpureView2() {
+    console.log('handleCatpureView2');
+  },
+  handleBindView2() {
+    console.log('handleBindView2');
+  },
+  handleCatpureView3() {
+    console.log('handleCatpureView3');
+  },
+  handleBindView3() {
+    console.log('handleBindView3');
+  },
 })
