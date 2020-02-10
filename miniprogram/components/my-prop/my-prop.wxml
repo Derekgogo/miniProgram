@@ -1,0 +1,5 @@
+<!--miniprogram/components/my-prop/my-prop.wxml-->
+<!--components/my-cpn/my-cpn.wxml-->
+<view class="title titleclass">{{title}}</view>
+<view class="content">{{content}}</view>
+

@@ -11,7 +11,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    title:'1111',
+    content:'3333',
   },
 
   /**

@@ -4,7 +4,8 @@
     "pages/wxs/wxs",
     "pages/wxml/wxml",
     "pages/about/about",
-    "pages/category/category"
+    "pages/category/category",
+    "components/my-prop/my-prop"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FF6978",

@@ -57,3 +57,11 @@ target是产生事件的view -->
     </view>
   </view>
 </view>
+
+<!-- 1.使用自定义组件 -->
+<my-cpn />
+
+<!-- 2.自定义组件传递数据 -->
+<my-prop title="我是自定义组件传过来参数" titleclass="redColor"></my-prop>
+<my-prop titleclass="redColor"></my-prop>
+<my-prop titleclass="blueColor"></my-prop>
