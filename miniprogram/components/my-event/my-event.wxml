@@ -1,0 +1,4 @@
+<view>
+
+<button bind:tap="hanldIncrement">+</button>
+</view>

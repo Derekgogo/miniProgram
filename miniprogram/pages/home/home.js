@@ -24,7 +24,8 @@ Page({
       }
     ],
     counter: 0,
-    titles: ['衣服', '裤子', '鞋子']
+    titles: ['衣服', '裤子', '鞋子'],
+    num:0
   },
   handleBtnClick() {
     //1错误的做法:界面是不会刷新的
@@ -119,4 +120,12 @@ Page({
   handleBindView3() {
     console.log('handleBindView3');
   },
+
+    //组件事件
+  handleIncrement(event){
+    console.log(event);
+    this.setData({
+      num:this.data.num + 1
+    })
+  }
 })

@@ -65,3 +65,8 @@ target是产生事件的view -->
 <my-prop title="我是自定义组件传过来参数" titleclass="redColor"></my-prop>
 <my-prop titleclass="redColor"></my-prop>
 <my-prop titleclass="blueColor"></my-prop>
+
+<!-- 3.组件内部发布事件 -->
+<!-- 监听increment这个事件，一旦监听到increment事件后就执行里面的handleIncrement函数 -->
+<view>当前计数:{{num}}</view>
+<my-event bind:increment="handleIncrement"></my-event>
