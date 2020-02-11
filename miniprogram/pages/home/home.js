@@ -36,14 +36,22 @@ Page({
     }, 2000);
   },
 
-  handleShowActionSheet(){
+  handleShowActionSheet() {
     wx.showActionSheet({
-      itemList: ['A','B','C'],
-      itemColor:'red',
-      success:res=>{
+      itemList: ['A', 'B', 'C'],
+      itemColor: 'red',
+      success: res => {
         console.log(res);
       }
     })
+  },
+
+  onShareAppMessage: (options) => {
+    return {
+      title: '自定义标题',
+      imageUrl: '/images/create-collection.png',
+      path: '/pages/home/home.wxml',
+    }
   }
 
 })
