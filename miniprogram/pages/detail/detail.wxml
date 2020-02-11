@@ -1,0 +1,9 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+
+<navigator open-type="navigateBack">
+  自定义返回(navigateBack)
+</navigator>
+
+<navigator url="/pages/comment/comment">
+  跳转到评论页
+</navigator>

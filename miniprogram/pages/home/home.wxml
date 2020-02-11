@@ -1,2 +1,18 @@
 <!--miniprogram/pages/home.wxml-->
-<text>miniprogram/pages/home.wxml</text>
+<navigator url="/pages/detail/detail"
+           open-type="redirect">
+ 调到详情页(redirect)
+ </navigator>
+
+ <navigator url="/pages/about/about"
+           open-type="switchTab">
+ 调到关于页(switchTab)
+ </navigator>
+
+  <navigator url="/pages/detail/detail"
+           open-type="reLaunch">
+ 调到关于页(reLaunch)
+ </navigator>
+
+
+
