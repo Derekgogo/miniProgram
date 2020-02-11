@@ -1,3 +1,12 @@
 <!--miniprogram/pages/home.wxml-->
-<text>miniprogram/pages/home.wxml</text>
-<text>miniprogram/pages/home.wxml</text>
+<!-- 1.toast弹窗 -->
+<button size="mini" bind:tap="handleShowToast">按钮</button>
+
+<!-- 2.modal弹窗 -->
+<button size="mini" bind:tap="handleShowModal">按钮</button>
+
+<!-- 3.loading弹窗 -->
+<button size="mini" bind:tap="handleShowLoading">按钮</button>
+
+<!-- 4.actionSheet -->
+<button size="mini" bind:tap="handleShowActionSheet">按钮</button>
