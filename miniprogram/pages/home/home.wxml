@@ -14,5 +14,8 @@
  调到关于页(reLaunch)
  </navigator>
 
+ <!-- 3.跳转过程中数据的传递 -->
+ <navigator url="/pages/detail/detail?name=moren&age=11">跳转页面到详情</navigator>
 
+<view>{{title}}</view>
 
