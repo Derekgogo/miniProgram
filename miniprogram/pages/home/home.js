@@ -1,3 +1,4 @@
+const app = getApp();
 // miniprogram/pages/home.js
 Page({
 
